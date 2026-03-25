@@ -1,0 +1,210 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    font-family: "Poppins";
+}
+
+/* Card (PURE WHITE) */
+.card {
+    display: grid;
+    width: 500px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    gap: 20px;
+
+    background: #ffffff; /* solid white */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card:hover #previous {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+/* base state: hidden */
+img {
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+
+    opacity: 0;          /* invisible */
+    visibility: hidden;  /* prevents broken icon from showing */
+    transform: translateY(25px) scale(0.96);
+
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s linear 0.6s; /* delay visibility toggle until fade-out ends */
+}
+
+/* show state */
+img.show {
+    opacity: 1;
+    visibility: visible; /* now visible */
+    transform: translateY(0) scale(1);
+
+    transition-delay: 0s; /* fade in immediately */
+}
+
+/* default hidden state */
+#answer {
+    font-weight: 300;
+    font-size: 22px;
+    color: #2f4f2f;
+    display: block;
+
+    opacity: 0;
+    transform: translateY(15px) scale(0.96);
+
+    transition:
+        opacity 0.6s ease-out,
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+    min-height: 40px; /* keeps card height stable */
+}
+
+/* show state */
+#answer.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+img.imgs {
+    visibility: hidden;
+}
+
+
+/* Buttons */
+#check,
+#next {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+/* Check button */
+#check {
+    background: linear-gradient(135deg, #72BF6A, #5da857);
+    color: #fff;
+}
+
+#check:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Next button */
+#next {
+    background: #eeeeee;
+    color: #333;
+}
+
+#next:hover {
+    background: #dddddd;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    img {
+        width: 140px;
+    }
+}
+.music-btn {
+    position: absolute;
+    top: 20px;
+    right: 38px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background: #ffffff;
+    color: #2E7D32;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+    transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+    border-radius: 25%;
+}
+
+.music-btn.playing {
+    animation: bounce 0.8s ease-in-out infinite;
+    }
+
+@keyframes bounce {
+    0%   { transform: translateX(0px); }
+    50%  { transform: translateX(-16px); }
+    100% { transform: translateX(0px); }
+}
+
+a {
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 22px;
+    padding: 8px 16px;
+    background-color: #2E7D32;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+a:hover {
+    background-color: #5da857;
+    transform: scale(1.05);
+}
+
+#previous {
+    position: relative;
+    transition: transform 0.3s ease;
+    opacity: 0.6;
+    z-index: 1;
+}
