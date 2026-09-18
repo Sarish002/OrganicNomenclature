@@ -1,0 +1,12 @@
+[
+  {"problem": "A structural steel wire is subjected to a vertical tension force of 750 N. If its cross-sectional area is 2.0 mm², calculate the tensile stress developed inside.", "answer": "3.75e+07 N/m²"},
+  {"problem": "A metal rod with an initial length of 3.0 meters stretches by exactly 0.60 mm under a heavy cargo load. Compute the longitudinal strain.", "answer": "2.0e-04"},
+  {"problem": "A nylon rope of length 4.0 meters and cross-sectional area 5.0 mm² is pulled by a force of 200 N. If Young's modulus is 2.0 x 10⁹ N/m², find the elongation.", "answer": "0.08 meters"},
+  {"problem": "A solid brass cube with edge lengths of 0.10 meters is subjected to a uniform hydraulic pressure of 2.0 x 10⁶ N/m². If its Bulk Modulus is 6.0 x 10¹⁰ N/m², find the change in volume.", "answer": "-3.33e-08 m³"},
+  {"problem": "A metal wire breaks when the tensile stress reaches 4.0 x 10⁸ N/m². If the wire has a diameter of 2.0 mm, calculate the minimum force needed to snap it.", "answer": "1256.64 Newtons"},
+  {"problem": "A structural steel column carries a compressive load of 50,000 N. If the allowable compressive stress is 1.2 x 10⁷ N/m², find the minimum required cross-sectional area.", "answer": "0.00417 m²"},
+  {"problem": "Calculate the structural stiffness (force per unit elongation) of a copper rod of length 2.0 meters and cross-sectional area 4.0 cm². (Young's Modulus = 1.1 x 10¹¹ N/m²)", "answer": "2.2e+07 N/m"},
+  {"problem": "A wire is stretched by 1.0 mm under a load of 10 kg. What elongation will be produced by a load of 30 kg on the same wire, assuming it stays elastic?", "answer": "3.0 mm"},
+  {"problem": "A shearing force of 3000 N is applied to the upper face of a metal cube of side 5.0 cm. If the Shear Modulus is 4.0 x 10¹⁰ N/m², find the lateral displacement of the top face.", "answer": "1.5e-06 meters"},
+  {"problem": "Find the energy density (energy per unit volume) stored in a wire stretched to a longitudinal strain of 1.0 x 10⁻³. (Young's Modulus = 2.0 x 10¹¹ N/m²)", "answer": "1.0e+05 J/m³"}
+]

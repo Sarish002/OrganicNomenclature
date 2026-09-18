@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Practice</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="hero">
+    <!-- Top Navigation Links -->
+    <div class="nav-links">
+      <a href="index.html">Practice naming 📗️</a>
+      <a href="index2.html">Practice drawing ✒️</a>
+    </div>
+
+    <!-- Music Button -->
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
+    <audio id="music" src="lofi.mp3" loop></audio>
+
+    <div class="main-container">
+
+      <!-- Chapter Selection -->
+      <div class="sidebar">
+        <h3>Select Chapters</h3>
+        <div id="chapterList"></div>
+        <button id="startBtn" onclick="startQuiz()">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Card -->
+      <div class="card" id="quizCard" style="display: none;">
+        <p id="chapter">Chapter</p>
+        <p id="problem">Problem will appear here</p>
+        <div class="buttons">
+          <button id="answerBtn" onclick="showAnswer()">Answer</button>
+          <button id="nextBtn" onclick="nextProblem()">Next</button>
+        </div>
+
+        <p id="answer"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>

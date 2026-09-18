@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Organic Chemistry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Organic Chemistry Practice</title>
 </head>
 <body>
     <div class="hero">
-        <a href="index.html">Practice naming 📗️</a>
+        <div class="nav-links">
+            <a href="index.html">Practice naming 📗️</a>
+            <a href="index3.html">Practice Physics 🧭</a>
+        </div>
+
         <button class="music-btn" onclick="music()" id="musicBtn">🎵</button>
         <audio src="lofi.mp3" id="music" loop></audio>
+
         <div class="card">
             <p id="previous">Previous: </p>
             <button id="next" onclick="change()">Next</button>
             <p id="answer"></p>
-            <img id="img" width="300" height="200">
+            <img id="img" alt="Practice visual">
             <button id="check" onclick="answer()"> Answer </button>
         </div>
     </div>
     <script src="script2.js"></script>
 </body>
 </html>
-
